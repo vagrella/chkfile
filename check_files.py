@@ -40,7 +40,7 @@ else:
     log('Nothing to remove !!!')
     sys.exit(0)
 
-for i in list(set(lista2) - set(lista1)):
+for i in dif:
     log('Removing {}'.format(i))
     os.remove(i)
 
